@@ -83,9 +83,16 @@ p.lead {
   color: #3888bd;
 }
 
-.drop-title {
-  color: #3888bd !important;
-  opacity: 0;
+.tooltip-arrow,
+.tooltip-inner
+{
+  color: white;
+  background-color: #3888bd;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #3888bd;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
