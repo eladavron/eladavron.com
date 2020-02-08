@@ -202,3 +202,12 @@ a {
 a:hover, a:focus, a:active {
   color: #3888bd;
 }
+
+
+.icon {
+  -webkit-filter: grayscale(100%);
+}
+
+.icon:hover {
+  -webkit-filter: grayscale(0%) !important;
+}
