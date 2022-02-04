@@ -224,3 +224,8 @@ a:hover, a:focus, a:active {
 .icon:hover {
   -webkit-filter: grayscale(0%) !important;
 }
+
+.intel-logo {
+  height: 1.1rem;
+  vertical-align: baseline;
+}
