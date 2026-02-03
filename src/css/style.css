@@ -317,12 +317,16 @@ a:hover {
   padding: 0 1.5rem;
 }
 
-.project-card *:first-of-type {
+.project-card p:first-of-type {
   margin-top: 0.5rem;
 }
 
-.project-card *:last-of-type {
-  margin-bottom: 0.75rem;
+.project-card a {
+  padding-bottom: 0;
+}
+
+.project-card a:last-of-type {
+  padding-bottom: 1rem;
 }
 
 .project-link {
