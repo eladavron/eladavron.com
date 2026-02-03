@@ -71,10 +71,12 @@ header {
 
 .nav-menu a:hover {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .nav-menu a.active {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .nav-menu > .nav-item > a.active::after {

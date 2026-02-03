@@ -9,6 +9,8 @@ navOrder: 3
 
 Here are some of the projects I've worked on. Each represents a unique challenge and learning opportunity.
 
+## Active Projects
+
 <div class="projects-grid">
   <div class="project-card">
     <h3>Project One</h3>
@@ -35,7 +37,7 @@ Here are some of the projects I've worked on. Each represents a unique challenge
   </div>
 </div>
 
-## Open Source
+## Past Projects
 
 I'm passionate about contributing to open source projects and sharing code with the community. Check out my GitHub profile to see my contributions and collaborations.
 
