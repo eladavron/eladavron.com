@@ -11,7 +11,10 @@
   <header>
     <nav class="main-nav">
       <div class="nav-container">
-        <a href="/" class="logo">Elad Avron</a>
+        <div class="logo-container">
+          <a href="/" class="logo">Elad Avron</a>
+          <p class="subtitle">Coding is my passion 🐸</p>
+        </div>
         <ul class="nav-menu">
           {% for item in collections.navigation %}
           <li class="nav-item{% if item.data.page.url == page.url %} active{% endif %}">
@@ -31,8 +34,14 @@
           <a href="https://github.com/eladavron" target="_blank" rel="noopener" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn">
+          <a href="https://linkedin.com/in/eladavron" target="_blank" rel="noopener" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://bsky.app/profile/ambious.eladavron.com" target="_blank" rel="noopener" title="Bluesky">
+            <i class="fab fa-bluesky"></i>
+          </a>
+          <a href="mailto:elad@eladavron.com" title="Email">
+            <i class="fas fa-envelope"></i>
           </a>
         </div>
       </div>
