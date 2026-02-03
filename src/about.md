@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: About
+title: About Me
 inNav: true
 navOrder: 2
 ---
