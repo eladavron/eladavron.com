@@ -4,12 +4,14 @@
   "description": "Personal website for Elad Avron",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "deploy": "npm run build && gh-pages -d _site"
   },
   "keywords": [],
   "author": "Elad Avron",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "gh-pages": "^6.1.1"
   }
 }

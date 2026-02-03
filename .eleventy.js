@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   // Copy assets to output
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
   
   // Create navigation collection
   eleventyConfig.addCollection("navigation", function(collectionApi) {
