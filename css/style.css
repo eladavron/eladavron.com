@@ -39,12 +39,31 @@ header {
   height: 70px;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.2;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
   transition: opacity 0.3s ease;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-style: italic;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .logo:hover {
@@ -122,7 +141,7 @@ header {
 }
 
 .nav-item:hover .submenu,
-.nav-item:focus-within .submenu {
+  .nav-item:focus-within .submenu {
   display: block;
 }
 
@@ -150,7 +169,6 @@ header {
 
 .social-links {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 
@@ -184,7 +202,8 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  min-height: calc(100vh - 140px - 80px); /* viewport - header - footer */
+  min-height: calc(100vh - 140px - 80px);
+  /* viewport - header - footer */
 }
 
 h1 {
@@ -337,7 +356,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .nav-container {
     flex-wrap: wrap;
   }
@@ -348,10 +367,6 @@ footer {
     width: 100%;
     justify-content: center;
     padding-top: 1rem;
-  }
-  
-  .social-links {
-    gap: 0.75rem;
   }
   
   .social-links a {
