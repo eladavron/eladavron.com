@@ -1,0 +1,51 @@
+module.exports = function(eleventyConfig) {
+  // Copy assets to output
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/assets");
+  
+  // Create navigation collection
+  eleventyConfig.addCollection("navigation", function(collectionApi) {
+    return collectionApi.getAll()
+      .filter(item => item.data.inNav)
+      .sort((a, b) => (a.data.navOrder || 0) - (b.data.navOrder || 0));
+  });
+  
+  // Filter to extract h2 headers from content
+  eleventyConfig.addFilter("extractHeaders", function(content) {
+    if (!content) return [];
+    const headerRegex = /<h2[^>]*>(.*?)<\/h2>/gi;
+    const headers = [];
+    let match;
+    while ((match = headerRegex.exec(content)) !== null) {
+      const text = match[1].replace(/<[^>]+>/g, '').trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      headers.push({ text, id });
+    }
+    return headers;
+  });
+  
+  // Add IDs to h2 elements
+  eleventyConfig.addTransform("addHeaderIds", function(content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
+      return content.replace(/<h2>(.*?)<\/h2>/gi, function(match, text) {
+        const id = text.replace(/<[^>]+>/g, '').trim().toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        return `<h2 id="${id}">${text}</h2>`;
+      });
+    }
+    return content;
+  });
+  
+  // Set custom directories for input, output, includes, and layouts
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+      layouts: "_layouts"
+    },
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk"
+  };
+};

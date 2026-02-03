@@ -1,6 +1,30 @@
+# Dependencies
+node_modules/
 
-#Ignore thumbnails created by Windows
+# Build output
+_site/
+
+# System files
+.DS_Store
 Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Legacy (kept for reference)
 #Ignore files built by Visual Studio
 *.obj
 *.exe
@@ -28,7 +52,5 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
-#Nuget packages folder
 packages/
-/.vscode/
 .htaccess
