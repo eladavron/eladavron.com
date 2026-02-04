@@ -221,6 +221,18 @@ header {
 }
 
 /* Main Content */
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  float: left;
+  margin-right: 1.5rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -265,20 +277,31 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  text-align: center;
   padding: 4rem 0;
 }
 
 .hero h1 {
+  text-align: center;
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.25rem;
   color: #6b7280;
   max-width: 600px;
-  margin: 0 auto 2rem;
+}
+
+.hero-quote {
+  text-align: left;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.hero-quote .quote-attribution {
+  text-align: right;
+  font-style: italic;
 }
 
 .cta-button {
@@ -327,6 +350,9 @@ a:hover {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .project-card p {
@@ -339,14 +365,6 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.project-card a {
-  padding-bottom: 0;
-}
-
-.project-card a:last-of-type {
-  padding-bottom: 1rem;
-}
-
 .project-link {
   color: var(--primary-color);
   font-weight: 600;
@@ -354,6 +372,26 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0 1.5rem 0.75rem 1.5rem;
+}
+
+.project-icon {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.project-badges a {
+  margin: 0;
+  padding: 0;
 }
 
 /* Contact Info */
