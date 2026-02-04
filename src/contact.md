@@ -7,7 +7,7 @@ navOrder: 4
 
 # Get In Touch
 
-I'd love to hear from you! Whether you have a question, want to collaborate on a project, or just want to say hi, feel free to reach out.
+There are a few ways to contact me. I'm not on social media almost at all, but you can always email me or hit me up on LinkedIn or Bluesky.
 
 <div class="contact-info">
   <h3>Contact Information</h3>
