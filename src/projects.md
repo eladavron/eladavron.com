@@ -37,13 +37,11 @@ Here are some of the projects I've worked on. Each represents a unique challenge
     <img src="/img/ambious.png" alt="Ambious Icon" class="project-icon"/>
     Personal Website
     </h2>
-    <p>Built with 11ty (Eleventy), this static site demonstrates clean design, responsive layout, and efficient static site generation. No frameworks needed!</p>
+    <p>Built with 11ty (Eleventy), this was my first attempt at working with agentic AI, using GitHub CoPilot with Claude Sonnet 4.5.</p>
     <a href="https://github.com/eladavron/eladavron.com" class="project-link">View Source →</a>
   </div>
 </div>
 
 ## Past Projects
 
-- Troper
-- NoteProfiler
-- HTCCarExposed
+- [Troper](https://github.com/eladavron/AndroidTroper2) - An Android app for browsing and saving TV Tropes articles.
