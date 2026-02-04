@@ -47,7 +47,3 @@ Here are some of the projects I've worked on. Each represents a unique challenge
 - Troper
 - NoteProfiler
 - HTCCarExposed
-
----
-
-Interested in collaborating? [Get in touch](/contact/)!
