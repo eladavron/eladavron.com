@@ -15,13 +15,18 @@ module.exports = function(eleventyConfig) {
   // Filter to extract h2 headers from content
   eleventyConfig.addFilter("extractHeaders", function(content) {
     if (!content) return [];
-    const headerRegex = /<h2[^>]*>(.*?)<\/h2>/gi;
+    // Use [\s\S] instead of . to match across newlines
+    const headerRegex = /<h2[^>]*>([\s\S]*?)<\/h2>/gi;
     const headers = [];
     let match;
     while ((match = headerRegex.exec(content)) !== null) {
-      const text = match[1].replace(/<[^>]+>/g, '').trim();
+      // Extract text content, removing HTML tags but preserving whitespace
+      let text = match[1].replace(/<img[^>]*>/gi, '').replace(/<[^>]+>/g, '').trim();
+      // Generate ID from the text content
       const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-      headers.push({ text, id });
+      if (text && id) {
+        headers.push({ text, id });
+      }
     }
     return headers;
   });
