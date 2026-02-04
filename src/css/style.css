@@ -43,6 +43,23 @@ header {
   height: 70px;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  text-decoration: none;
+}
+
+.logo-wrapper img {
+  height: 4.5rem;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-wrapper img:hover {
+  transform: scale(1.5);
+}
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -51,6 +68,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .logo {
