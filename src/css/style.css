@@ -334,6 +334,12 @@ a:hover {
   margin-top: 2rem;
 }
 
+.projects-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .project-card {
   background-color: var(--secondary-bg);
   border: 1px solid var(--border-color);
@@ -358,7 +364,7 @@ a:hover {
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .project-card p {
@@ -380,6 +386,7 @@ a:hover {
   padding: 0 1.5rem 0.75rem 1.5rem;
 }
 
+.project-card h3>img,
 .project-icon {
   height: 2.5rem;
   width: auto;
