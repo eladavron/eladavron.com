@@ -19,7 +19,7 @@ navOrder: 1
 
 I'm Elad, a programmer nearly since birth (I could code basic stuff in qBasic even before I could read and write).
 
-I am a quick learner and very good at adapting to new technologies and platforms, I am  I'm meticulous and obsessive about user interface design and experience, and I excel at solving real-world problems and fixing issues with both software and hardware.
+I am a quick learner and very good at adapting to new technologies and platforms, I am meticulous and obsessive about user interface design and experience, and I excel at solving real-world problems and fixing issues with both software and hardware.
 
 I am currently employed as a Senior Software Engineer at [GE Healthcare](https://www.gehealthcare.com/) in the Cybersecurity and Software Infrastructure team.
 
