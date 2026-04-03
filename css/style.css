@@ -721,8 +721,8 @@ header {
 .hero-quote {
   margin: auto;
   max-width: 760px;
-  border-left: 4px solid var(--primary-color);
-  padding-left: 1rem;
+  border-top: 2px solid var(--primary-color);
+  margin-top: 2rem;
   color: #334155;
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
 }
