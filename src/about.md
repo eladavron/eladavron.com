@@ -16,7 +16,9 @@ navOrder: 2
             </h3>
             <span class="timeline-date">2025 - Current</span>
         </div>
-        <p>Senior Software Engineer</p>
+        <ul>
+            <li>Senior Software Engineer</li>
+        </ul>
     </div>
     <div class="timeline-item">
         <div class="timeline-header">
@@ -38,7 +40,9 @@ navOrder: 2
             </h3>
             <span class="timeline-date">2020-2021</span>
         </div>
-        <p>Software Engineer</p>
+        <ul>
+            <li>Software Engineer</li>
+        </ul>
     </div>
     <div class="timeline-item">
         <div class="timeline-header">
@@ -47,7 +51,9 @@ navOrder: 2
             </h3>
             <span class="timeline-date">2018-2020</span>
         </div>
-        <p>Software Engineering Student</p>
+        <ul>
+            <li>Software Engineering Student</li>
+        </ul>
     </div>
 </div>
 
