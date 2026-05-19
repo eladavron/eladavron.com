@@ -18,7 +18,12 @@
           <p class="subtitle">Coding is my passion 🐸</p>
         </div>
         </div>
-        <ul class="nav-menu">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
           
           <li class="nav-item">
             <a href="/" >Home</a>
@@ -33,7 +38,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="/about/" >About Me</a>
+            <a href="/about/" >Experience</a>
             
             
             <ul class="submenu">
@@ -110,5 +115,39 @@
   <footer>
     <p>&copy; 2026 Elad Avron. All rights reserved.</p>
   </footer>
+
+  <script>
+    (function () {
+      const nav = document.querySelector('.main-nav');
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('nav-menu');
+
+      if (!nav || !toggle || !menu) {
+        return;
+      }
+
+      function closeMenu() {
+        nav.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      toggle.addEventListener('click', function () {
+        const isOpen = nav.classList.toggle('menu-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      menu.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          closeMenu();
+        }
+      });
+    }());
+  </script>
 </body>
 </html>
